@@ -2,6 +2,9 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
+let arr1 = [1,2,3,4,5,6]
+
+
 function App() {
   return (
     <>
@@ -14,6 +17,7 @@ function App() {
         </a>
       </div>
       <h1>DashBoard 3</h1>
+      <p>{arr1}</p>
     </>
   )
 }
