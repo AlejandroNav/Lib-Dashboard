@@ -2,8 +2,17 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
-let arr1 = [1,2,3,4,5,6]
 
+function cubeIt(num: number) {
+  return (Math.cbrt(num))
+}
+function isLeap(year: number):boolean {
+  if ((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0) {
+    return true;
+  } else {
+    return false;
+  }
+}
 
 function App() {
   return (
@@ -16,8 +25,9 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1>DashBoard 3</h1>
-      <p>{arr1}</p>
+      <h1>DashBoard 34</h1>
+      <p>{cubeIt(127)}</p>
+      {isLeap(100)? <p>YYES</p>:<p>NOO</p>}
     </>
   )
 }
